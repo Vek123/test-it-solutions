@@ -63,7 +63,7 @@ jobs:
     - name: Install Dependencies
       run: |
         pip install -r requirements/test.txt
-        cd ./money_transfer/
     - name: Run Tests
       run: |
+        cd ./money_transfer/
         python manage.py test
