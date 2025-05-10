@@ -1,0 +1,19 @@
+html[data-theme='dark'] {
+    .dtp_main {
+        background-color: inherit;
+    }
+    .dtp_modal-content {
+        color: black;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html[data-theme='auto'] {
+        .dtp_main {
+            background-color: inherit;
+        }
+        .dtp_modal-content {
+            color: black;
+        }
+    }
+}

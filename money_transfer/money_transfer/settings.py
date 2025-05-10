@@ -25,6 +25,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_admin_filters',
+    'smart_selects',
+    'catalog.apps.CatalogConfig',
+    'core.apps.CoreConfig',
     'homepage.apps.HomepageConfig',
 ]
 
@@ -124,3 +128,7 @@ STATICFILES_DIRS = [
 STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+FIXTURE_DIRS = [
+    BASE_DIR / 'fixtures',
+]
