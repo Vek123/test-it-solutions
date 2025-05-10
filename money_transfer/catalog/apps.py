@@ -4,7 +4,7 @@ from django.apps import AppConfig
 from django.utils.translation import gettext_lazy as _
 
 
-class HomepageConfig(AppConfig):
+class CatalogConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'homepage'
-    verbose_name = _('Homepage')
+    name = 'catalog'
+    verbose_name = _('Catalog')

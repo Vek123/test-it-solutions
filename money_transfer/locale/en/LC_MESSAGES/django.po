@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-11 00:03+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\catalog\apps.py:10
+msgid "Catalog"
+msgstr "Catalog"
+
+#: .\catalog\models.py:17
+msgid "record status"
+msgstr "record status"
+
+#: .\catalog\models.py:18
+msgid "record statuses"
+msgstr "record statuses"
+
+#: .\catalog\models.py:23
+msgid "record type"
+msgstr "record type"
+
+#: .\catalog\models.py:24
+msgid "record types"
+msgstr "record types"
+
+#: .\catalog\models.py:30 .\catalog\models.py:96
+msgid "type"
+msgstr "type"
+
+#: .\catalog\models.py:36
+msgid "record category"
+msgstr "record category"
+
+#: .\catalog\models.py:37
+msgid "record categories"
+msgstr "record categories"
+
+#: .\catalog\models.py:43 .\catalog\models.py:90
+msgid "sub category"
+msgstr "sub category"
+
+#: .\catalog\models.py:49
+msgid "record sub category"
+msgstr "record sub category"
+
+#: .\catalog\models.py:50
+msgid "record sub categories"
+msgstr "record sub categories"
+
+#: .\catalog\models.py:55
+msgid "comment"
+msgstr "comment"
+
+#: .\catalog\models.py:59
+msgid "Max length is 65535"
+msgstr "Max length is 65535"
+
+#: .\catalog\models.py:62
+msgid "creation date"
+msgstr "creation date"
+
+#: .\catalog\models.py:67
+msgid "total (rub.)"
+msgstr "total (rub.)"
+
+#: .\catalog\models.py:68
+msgid "Enter positive number"
+msgstr "Enter positive number"
+
+#: .\catalog\models.py:75
+msgid "category"
+msgstr "category"
+
+#: .\catalog\models.py:76
+msgid "Select \"Type\" at first"
+msgstr "Select \"Type\" at first"
+
+#: .\catalog\models.py:81
+msgid "status"
+msgstr "status"
+
+#: .\catalog\models.py:91
+msgid "Select \"Category\" at first"
+msgstr "Select \"Category\" at first"
+
+#: .\catalog\models.py:101
+msgid "cash flow record"
+msgstr "cash flow record"
+
+#: .\catalog\models.py:102
+msgid "cash flow records"
+msgstr "cash flow records"
+
+#: .\catalog\models.py:116
+msgid "Selected sub category doesn't belong to the selected category."
+msgstr "Selected sub category doesn't belong to the selected category."
+
+#: .\catalog\models.py:126
+msgid "Selected category doesn't belong to the selected record type."
+msgstr "Selected category doesn't belong to the selected record type."
+
+#: .\catalog\models.py:135
+msgid "short comment"
+msgstr "short comment"
+
+#: .\core\apps.py:10
+msgid "Core"
+msgstr "Core"
+
+#: .\core\models.py:13
+msgid "name"
+msgstr "name"
+
+#: .\core\models.py:15
+msgid "Max length is 64"
+msgstr "Max length is 65535"
+
+#: .\core\models.py:27
+msgid "name (normalized)"
+msgstr "name (normalized)"
+
+#: .\core\models.py:29
+msgid "Generated field based on \"name\" field"
+msgstr "Generated field based on \"name\" field"
+
+#: .\core\models.py:53
+#, python-format
+msgid "%(class_name)s with this %(field_name)s already exists."
+msgstr "%(class_name)s with this %(field_name)s already exists."
+
+#: .\core\validators.py:17
+msgid "Time needs to be in past time"
+msgstr "Time needs to be in past time"
+
+#: .\homepage\apps.py:10 .\homepage\templates\homepage\index.html:6
+msgid "Homepage"
+msgstr "Homepage"
+
+#: .\templates\base.html:26
+msgid "No content"
+msgstr "No content"
+
+#: .\templates\includes\footer.html:5
+msgid "Personal data"
+msgstr "Personal data"
+
+#: .\templates\includes\footer.html:6
+msgid "Consumer rights"
+msgstr "Consumer rights"
+
+#: .\templates\includes\header.html:10
+msgid "To main"
+msgstr "To main"
