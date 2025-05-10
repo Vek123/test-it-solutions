@@ -15,7 +15,8 @@ class RecordTests(TestCase):
         new_status.full_clean()
         new_status.save()
         self.assertEqual(
-            existed_statuses_count + 1, models.RecordStatus.objects.count(),
+            existed_statuses_count + 1,
+            models.RecordStatus.objects.count(),
         )
 
     def test_valid_create_type(self):
@@ -24,7 +25,8 @@ class RecordTests(TestCase):
         new_type.full_clean()
         new_type.save()
         self.assertEqual(
-            existed_types_count + 1, models.RecordType.objects.count(),
+            existed_types_count + 1,
+            models.RecordType.objects.count(),
         )
 
     def test_valid_create_category(self):
@@ -65,7 +67,8 @@ class RecordTests(TestCase):
         new_record.full_clean()
         new_record.save()
         self.assertEqual(
-            existed_records_count + 1, models.Record.objects.count(),
+            existed_records_count + 1,
+            models.Record.objects.count(),
         )
 
     def test_valid_max_create_record(self):
@@ -86,7 +89,8 @@ class RecordTests(TestCase):
         new_record.full_clean()
         new_record.save()
         self.assertEqual(
-            existed_records_count + 1, models.Record.objects.count(),
+            existed_records_count + 1,
+            models.Record.objects.count(),
         )
 
     def test_invalid_created_at_future_create_record(self):
@@ -106,7 +110,8 @@ class RecordTests(TestCase):
             new_record.save()
 
         self.assertEqual(
-            existed_records_count, models.Record.objects.count(),
+            existed_records_count,
+            models.Record.objects.count(),
         )
 
     def test_invalid_negative_total_create_record(self):
@@ -126,7 +131,8 @@ class RecordTests(TestCase):
             new_record.save()
 
         self.assertEqual(
-            existed_records_count, models.Record.objects.count(),
+            existed_records_count,
+            models.Record.objects.count(),
         )
 
     def test_invalid_sub_category_not_from_category_create_record(self):
@@ -148,7 +154,8 @@ class RecordTests(TestCase):
             new_record.save()
 
         self.assertEqual(
-            existed_records_count, models.Record.objects.count(),
+            existed_records_count,
+            models.Record.objects.count(),
         )
 
     def test_invalid_category_not_from_record_type_create_record(self):
@@ -170,5 +177,6 @@ class RecordTests(TestCase):
             new_record.save()
 
         self.assertEqual(
-            existed_records_count, models.Record.objects.count(),
+            existed_records_count,
+            models.Record.objects.count(),
         )

@@ -13,15 +13,9 @@ class RecordCategoryAdmin(admin.ModelAdmin):
         models.RecordCategory.name.field.name,
         models.RecordCategory.record_types.field.name,
     )
-    readonly_fields = (
-        models.RecordCategory.name_normalize.field.name,
-    )
-    list_display = (
-        models.RecordCategory.name.field.name,
-    )
-    list_display_links = (
-        models.RecordCategory.name.field.name,
-    )
+    readonly_fields = (models.RecordCategory.name_normalize.field.name,)
+    list_display = (models.RecordCategory.name.field.name,)
+    list_display_links = (models.RecordCategory.name.field.name,)
 
 
 @admin.register(models.RecordSubCategory)
@@ -31,15 +25,9 @@ class RecordSubCategoryAdmin(admin.ModelAdmin):
         models.RecordSubCategory.name.field.name,
         models.RecordSubCategory.categories.field.name,
     )
-    readonly_fields = (
-        models.RecordSubCategory.name_normalize.field.name,
-    )
-    list_display = (
-        models.RecordSubCategory.name.field.name,
-    )
-    list_display_links = (
-        models.RecordSubCategory.name.field.name,
-    )
+    readonly_fields = (models.RecordSubCategory.name_normalize.field.name,)
+    list_display = (models.RecordSubCategory.name.field.name,)
+    list_display_links = (models.RecordSubCategory.name.field.name,)
 
 
 @admin.register(models.RecordStatus)
@@ -48,15 +36,9 @@ class RecordStatusAdmin(admin.ModelAdmin):
         models.RecordStatus.name_normalize.field.name,
         models.RecordStatus.name.field.name,
     )
-    readonly_fields = (
-        models.RecordStatus.name_normalize.field.name,
-    )
-    list_display = (
-        models.RecordStatus.name.field.name,
-    )
-    list_display_links = (
-        models.RecordStatus.name.field.name,
-    )
+    readonly_fields = (models.RecordStatus.name_normalize.field.name,)
+    list_display = (models.RecordStatus.name.field.name,)
+    list_display_links = (models.RecordStatus.name.field.name,)
 
 
 @admin.register(models.RecordType)
@@ -65,15 +47,9 @@ class RecordTypeAdmin(admin.ModelAdmin):
         models.RecordType.name_normalize.field.name,
         models.RecordType.name.field.name,
     )
-    readonly_fields = (
-        models.RecordType.name_normalize.field.name,
-    )
-    list_display = (
-        models.RecordType.name.field.name,
-    )
-    list_display_links = (
-        models.RecordType.name.field.name,
-    )
+    readonly_fields = (models.RecordType.name_normalize.field.name,)
+    list_display = (models.RecordType.name.field.name,)
+    list_display_links = (models.RecordType.name.field.name,)
 
 
 @admin.register(models.Record)
@@ -96,9 +72,7 @@ class RecordAdmin(admin.ModelAdmin):
         models.Record.total.field.name,
         models.Record.short_comment,
     )
-    list_display_links = (
-        models.Record.created_at.field.name,
-    )
+    list_display_links = (models.Record.created_at.field.name,)
     list_filter = (
         (models.Record.created_at.field.name, DateRangePicker),
         models.Record.status.field.name,
