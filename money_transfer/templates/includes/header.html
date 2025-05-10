@@ -7,7 +7,7 @@
   </a>
   {% with request.resolver_match.view_name as view_name %}
     <ul class="nav nav-pills">
-      <li class="nav-item"><a href="{% url 'homepage:index' %}" class="nav-link {% if view_name == 'homepage:index' %}disabled active{% endif %}" aria-current="page">{% translate "На главную" %}</a></li>
+      <li class="nav-item"><a href="{% url 'homepage:index' %}" class="nav-link {% if view_name == 'homepage:index' %}disabled active{% endif %}" aria-current="page">{% translate "To main" %}</a></li>
       <li class="nav-item ms-2">{% include "includes/change_language.html" %}</li>
     </ul>
   {% endwith %}
